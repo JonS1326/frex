@@ -62,6 +62,7 @@ import io.vram.frex.pastel.mixinterface.RenderChunkRegionExt;
 public abstract class MixinChunkRebuildTask implements RenderRegionContext<BlockAndTintGetter> {
 	//e -> field_20839 -> this$1
 	@Shadow protected RenderChunk this$1;
+	@Shadow(aliases = {"field_20839"}) protected RenderChunk this$1;
 
 	// Below are for RenderRegionBakeListener support
 
